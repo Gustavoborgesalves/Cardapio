@@ -94,3 +94,13 @@ body {
     text-align: left;
     line-height: 1.6;
 }
+
+textarea{
+    color: white;
+    background-color: #ad0202;
+}
+
+button{
+    color: #ffffff;
+    background-color: #008716;
+}

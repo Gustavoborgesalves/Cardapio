@@ -19,3 +19,4 @@ document.addEventListener('DOMContentLoaded', function() {
         section.style.display = index === 0 ? 'block' : 'none';
     });
 });
+

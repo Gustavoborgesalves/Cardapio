@@ -49,8 +49,18 @@
         <img src="pasta.jpg" alt="Prato de macarrão" class="image">
         <div class="text-content">
             <h2>Quem sou</h2>
-            <p>Sou um aluno do Colégio Estadual Antonio Tupy Pinheiro no Paraná...</p>
-            <p>Um dos problemas que encontrei na minha escola é sobre não ter um cardápio preparado dias antes...</p>
+            <p>Sou um aluno do Colégio Estadual Antonio Tupy Pinheiro no Paraná... <br> <br>
+                
+                Um dos problemas que encontrei na minha <br> escola é sobre nao ter um cardapio e nada <br>
+                preparado dias antes para os alunos saberem <br> oque vao comer na semana, a ideia desse <br>
+                projeto é deixar o lanche escolar mais <br> flexivel e ajude ainda mais os alunos com a <br> alimentação <br>
+                sem deixar os <br> alunos insatisfeitos com os lanches muito repetitivos. <br> <br>
+                
+                Aqui você podera dar sujestões e ver com <br> antecedencia o que sera feito de lanche na <br> escola <br>
+                e nao ficar insatisfeito chegando na escola e <br> ver que é algo que nao gosta de comer. <br> <br>
+                
+                As sujestões devem ser de forma acessivel <br> para a escola poder realizar os desejos de <br> todos <br>
+                nao pedindo coisas que vão saber que é <br> impossivel de fazer.</p>
             <!-- Texto continua... -->
         </div>
     </section>
@@ -65,13 +75,14 @@
         <div class="text-content">
         <h1>Deixe aqui as suas sujestões</h1>
         <p>Aqui você podera deixar sujestoes de lanches que você gostaria que tivesse na escola</p>
-        </div>
-        <div class="caixa-de-resposta">
-        <textarea name="sujestao" id=""></textarea>
-        </div>
-        <div class="botao">
-        <button>ENVIAR</button>
-        </div>
+
+        <form action="messageForm">
+        <textarea name="sujestao" id="messageInput" placeholder="Sugestão:"></textarea>
+        <button type="button" id="sendButton1">ENVIAR</button>
+        </form>
+        
+        <div id="messageBoard1"></div>
+
         <div class="text-content">
             <p>*favor nao deixar muitas sugestões para que todas possam ser feitas</p>
         </div>
@@ -83,16 +94,41 @@
             <h1>ENTRE EM CONTATO</h1>
             <p>Quer fazer um comentário, crítica ou sujestão?</p>
         </div>
-        <div class="caixa-de-resposta">
-        <textarea name="PARA:" value="PARA:" id=""></textarea>
-        <textarea name="NOME:" id=""></textarea>
-        <textarea name="E-MAIL:" id=""></textarea>
-        <textarea name="TELEFONE:" id=""></textarea>
-        <textarea name="MENSAGEM" id=""></textarea>
-            </div>
-            <div class="botao">
-        <button>ENVIAR</button>
-        </div>
+        <form id="messageForm"></form>
+        <textarea class="messageInput" placeholder="PARA:" required></textarea>
+        <textarea class="messageInput" placeholder="NOME:" required></textarea>
+        <textarea class="messageInput" placeholder="E-MAIL:" required></textarea>
+        <textarea class="messageInput" placeholder="TELEFONE:" required></textarea>
+        <textarea class="messageInput" placeholder="MENSAGEM:" required></textarea>
+        <button type="button" id="sendButton">ENVIAR</button>
+        </form>
+        
+        <div id="messageBoard"></div>
+
+        <script>
+            const sendButton = document.getElementById('sendButton');
+            const textareas = document.querySelectorAll('.messageInput');
+            const messageBoard = document.getElementById('messageBoard');
+            
+            sendButton.addEventListener('click', function() {
+                messageBoard.innerHTML = '';
+            
+                textareas.forEach((textarea, index) => {
+                    const message = textarea.value;
+            
+                    if (message.trim() !== '') {
+                        const newMessage = document.createElement('p');
+                        newMessage.textContent = `Mensagem ${index + 1}: ${message}`;
+                        messageBoard.appendChild(newMessage);
+            
+                        textarea.value = '';
+                    } else {
+                        alert(`Por favor, preencha a textarea ${index + 1}.`);
+                    }
+                });
+            });
+            </script>
+
      </section>
     <script src="main.js"></script>
 </body>
