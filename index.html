@@ -1,84 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardapio</title>
-    <link rel="stylesheet" href="">
+    <title>Cardápio Escolar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="pagina">
-        <div class="titulo-principal">
-            <h1>Cardapio</h1>
-        </div>
-        <div class="conteudo">
-            <p>Um projeto focado em organizar o cardapio escolar</p>
-        </div>
-        <div class="">
-            <p>ROLE PARA BAIXO</p>
-        </div>
-    </section>
-    <section class="pagina">
-        <p>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <ul>
+            <li class="active">
+                <span class="circle"></span>
+                <span class="text">Início</span>
+            </li>
+            <li>
+                <span class="circle"></span>
+                <span class="text">Quem sou</span>
+            </li>
+            <li>
+                <span class="circle"></span>
+                <span class="text">Cardápio</span>
+            </li>
+            <li>
+                <span class="circle"></span>
+                <span class="text">Sugestões</span>
+            </li>
+            <li>
+                <span class="circle"></span>
+                <span class="text">Contato</span>
+            </li>
+            <!-- Adicione mais itens de menu conforme necessário -->
+        </ul>
+    </nav>
 
-        </p>
-    </section>
-    <section>
-        <div class="titulo-principal">
-            <h1>Cardápio da semana</h1>
-        </div>
-        <div class="">
-            <p>Manhã</p>
-        </div>
-       <div class="dias">
-        <p>Segunda:</p><br>
-        <p>Terça</p><br>
-        <p>Quarta</p><br>
-        <p>Quinta</p><br>
-        <p>Sexta</p><br>
-       </div> 
-        <div class="">
-            <p>Tarde</p>
-        </div>
-        <div class="dias">
-            <p>Segunda:</p><br>
-            <p>Terça</p><br>
-            <p>Quarta</p><br>
-            <p>Quinta</p><br>
-            <p>Sexta</p><br>
-           </div> 
-           <div class="aviso">
-            <p>*sujeito a alterações</p>
-           </div>
-    </section>
-    <section>
-        <div>
-            <h1>Deixe aqui as suas sujestões</h1>
-        </div>
-        <div class="conteudo">
-            <p>Aqui você podera deixar sujestões de lanches que <br>você gostaria que tivesse na escola</p>
-        </div>
-        <div class="">
-            <p>Sujestão:</p>
-        </div>
-        <div class="button">
-            <h2>ENVIAR</h2>
-        </div>
-        <div class="aviso">
-            <p>favor não deixar muitas sujestões para que todas sejam feitas</p>
+    <!-- Conteúdo principal - Página 1 -->
+    <section id="inicio" class="content">
+        <h1>Cardápio</h1>
+        <p>Um projeto focado em organizar o cardápio escolar</p>
+        <div class="scroll-indicator">
+            <span>ROLE PARA BAIXO</span>
+            <div class="arrow"></div>
         </div>
     </section>
-    <section>
-        <div class="titulo-principal">
-            <h1>ENTRE EM CONTATO</h1>
-        </div>
-        <div class="conteudo">
-            <p>Quer fazer um comentario, elogio, critica ou sujestão?</p>
-        </div>
-        <div class="button">
 
+    <!-- Conteúdo principal - Página 2 -->
+    <section id="quem-sou" class="content">
+        <img src="pasta.jpg" alt="Prato de macarrão" class="image">
+        <div class="text-content">
+            <h2>Quem sou</h2>
+            <p>Sou um aluno do Colégio Estadual Antonio Tupy Pinheiro no Paraná...</p>
+            <p>Um dos problemas que encontrei na minha escola é sobre não ter um cardápio preparado dias antes...</p>
+            <!-- Texto continua... -->
         </div>
     </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
