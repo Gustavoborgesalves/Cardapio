@@ -45,6 +45,7 @@ body {
 .text {
     font-size: 16px;
     color: white;
+    text-align: center;
 }
 
 .active .circle {
@@ -57,9 +58,16 @@ body {
     width: calc(100% - 220px);
 }
 
+.paragrafo{
+    text-align: center;
+    font-size: 150%;
+}
+
 .content h1 {
     font-size: 60px;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Brush Script MT';
+    text-align: center;
+
 }
 
 .content h2 {
