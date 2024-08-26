@@ -48,6 +48,15 @@ body {
     text-align: center;
 }
 
+.titulo {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 800%;
+    text-align: center;
+  }
+  
+
 .active .circle {
     background-color: #FFD700;
 }
@@ -61,18 +70,6 @@ body {
 .paragrafo{
     text-align: center;
     font-size: 150%;
-}
-
-.content h1 {
-    font-size: 60px;
-    font-family: 'Brush Script MT';
-    text-align: center;
-
-}
-
-.content h2 {
-    font-size: 36px;
-    font-weight: bold;
 }
 
 .scroll-indicator {
@@ -97,11 +94,6 @@ body {
     width: 200px;
     float: left;
     margin-right: 20px;
-}
-
-.text-content {
-    text-align: left;
-    line-height: 1.6;
 }
 
 textarea{
