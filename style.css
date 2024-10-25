@@ -1,107 +1,325 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #800000; /* Cor de fundo principal */
-    color: white;
-    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto';
 }
 
-.sidebar {
-    width: 200px;
-    background-color: #1E1E1E;
-    padding: 20px;
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+    background-color: #3333;
+    border-bottom: 4px solid #670000;
+    color: #670000;
+}
+
+.secao1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./recreio1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+
+.secao1 .conteudo-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    height: 100vh;
-    scroll-snap-align: start;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.secao1 h1 {
+    color: #670000;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
-.sidebar li {
+.secao1 h2 {
+    color: rgb(177, 177, 177);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.secao1 h3 {
+    color: rgb(177, 177, 177);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+}
+
+/*Quem sou*/
+
+.quem-sou {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
     display: flex;
     align-items: center;
-    margin: 20px 0;
-    cursor: pointer;
+    justify-content: center;
 }
 
-.circle {
-    width: 20px;
-    height: 20px;
-    background-color: #FFD700;
-    border-radius: 50%;
-    margin-right: 10px;
+.quem-sou img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);
 }
 
-.text {
-    font-size: 16px;
-    color: white;
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentquem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentquem h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentquem p {
     text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
 }
 
-.titulo {
-    font-family: "Parisienne", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 800%;
-    text-align: center;
-  }
-  
+/*cardapio*/
 
-.active .circle {
-    background-color: #FFD700;
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 12, 12, 0.8);
 }
 
-.content {
-    margin-left: 220px;
-    padding: 50px;
-    width: calc(100% - 220px);
+.cardapio h1 {
+    font-size: 5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
 }
 
-.paragrafo{
-    text-align: center;
-    font-size: 150%;
+.itens-cardapio {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 450px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-.scroll-indicator {
-    margin-top: 50px;
+.itens-cardapio .info {
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
 }
 
-.scroll-indicator .arrow {
-    width: 20px;
-    height: 20px;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-    transform: rotate(45deg);
-    margin: 10px auto;
+.itens-cardapio .info h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
 }
 
-.scroll-indicator span {
-    font-size: 14px;
-    color: #DDDDDD;
+.itens-cardapio .info h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.image {
+.itens-cardapio div {
+    background-color: #5e5252;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio img {
+    width: 100%;
+    height: 270px;
+}
+
+.itens-cardapio .info .escolher {
     width: 200px;
-    float: left;
-    margin-right: 20px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #670000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
 }
 
-textarea{
+.itens-cardapio .info .escolher:hover{
+    background-color: #5e5252;
     color: white;
-    background-color: #ad0202;
 }
 
-button{
-    color: #ffffff;
-    background-color: #008716;
+/*sugestoes*/
+
+.sugestoes {
+    background-color: #1f1e1f;
+    width: 100%;
+    height: 800px;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./merenda2.jpg);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+
+.text-content h1 {
+    margin-top: 1rem;
+    margin-left: 10rem;
+    font-size: 6rem;
+    height: 200px;
+}
+
+.text-content h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+    height: 100px;
+}
+
+.text-content p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+    height: 100px;
+    color: #670000;
+}
+
+.text-content .message {
+    height: 50px;
+    width: 100px;
+}
+
+/*contatos*/
+
+.contatos {
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-secao {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i {
+    margin-right: 1rem;
+}
+
+.contatos-secao div {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.contatos-secao div:hover{
+    color: #670000;
+}
+
+footer {
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

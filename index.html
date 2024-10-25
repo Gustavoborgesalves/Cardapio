@@ -1,87 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pr-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio Escolar</title>
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Sidebar -->
-    <nav class="sidebar">
-        <ul>
-            <li class="active">
-                <span class="circle"></span>
-                <span class="text">Início</span>
-            </li>
-            <li>
-                <span class="circle"></span>
-                <span class="text">Quem sou</span>
-            </li>
-            <li>
-                <span class="circle"></span>
-                <span class="text">Cardápio</span>
-            </li>
-            <li>
-                <span class="circle"></span>
-                <span class="text">Sugestões</span>
-            </li>
-            <li>
-                <span class="circle"></span>
-                <span class="text">Contato</span>
-            </li>
-            <!-- Adicione mais itens de menu conforme necessário -->
-        </ul>
-    </nav>
-
-    <!-- Conteúdo principal - Página 1 -->
-    <section id="inicio" class="content">
-        <h1 class="titulo">Cardápio</h1>
-        <p>Um projeto focado em organizar o cardápio escolar</p>
-        <div class="scroll-indicator">
-            <span>ROLE PARA BAIXO</span>
-            <div class="arrow"></div>
+    <header class="content">
+        <div class="logo">
+            <h3>Cardapio</h3>
+        </div>
+        <nav>
+            <ul class="list-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quem sou</a></li>
+                <li><a href="#">Cardapio</a></li>
+                <li><a href="#">Sugestões</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="secao1">
+        <div class="conteudo-principal">
+            <h1>Cardapio</h1>
+            <h2>Um projeto focado em organizar o cardápio escolar</h2>
+            <h3>ROLE PARA BAIXO</h3>
         </div>
     </section>
 
-    <!-- Conteúdo principal - Página 2 -->
-    <section id="quem-sou" class="content">        
-        <h1 class="titulo">Quem sou</h1>
-        <div class="paragrafo">
-                <p>Sou um aluno do Colégio Estadual Antonio Tupy Pinheiro no Paraná... <br> <br>
+    <section class="quem-sou" id="Quem sou">
+        <div class="main">
+            <div class="contentquem">
+                <h1>Quem sou</h1>
+                <p>Sou um aluno do Colégio Estadual Antonio Tupy Pinheiro no Paraná... 
                 
-                Um dos problemas que encontrei na minha <br> escola é sobre nao ter um cardapio e nada <br>
-                preparado dias antes para os alunos saberem <br> oque vao comer na semana, a ideia desse <br>
-                projeto é deixar o lanche escolar mais <br> flexivel e ajude ainda mais os alunos com a <br> alimentação <br>
-                sem deixar os <br> alunos insatisfeitos com os lanches muito repetitivos. <br> <br>
-                
-                Aqui você podera dar sujestões e ver com <br> antecedencia o que sera feito de lanche na <br> escola <br>
-                e nao ficar insatisfeito chegando na escola e <br> ver que é algo que nao gosta de comer. <br> <br>
-                
-                As sujestões devem ser de forma acessivel <br> para a escola poder realizar os desejos de <br> todos <br>
-                nao pedindo coisas que vão saber que é <br> impossivel de fazer.</p>
+                    Um dos problemas que encontrei na minha escola é sobre nao ter um cardapio e nada 
+                    preparado dias antes para os alunos saberem oque vao comer na semana, a ideia desse 
+                    projeto é deixar o lanche escolar mais flexivel e ajude ainda mais os alunos com a alimentação
+                    sem deixar os alunos insatisfeitos com os lanches muito repetitivos. 
+                    
+                    Aqui você podera dar sujestões e ver com antecedencia o que sera feito de lanche na escola
+                    e nao ficar insatisfeito chegando na escola e ver que é algo que nao gosta de comer.
+                    
+                    As sujestões devem ser de forma acessivel para a escola poder realizar os desejos de todos
+                    nao pedindo coisas que vão saber que é impossivel de fazer.</p>
+            </div>
+            <div class="img-minha">
+                <img src="./minhafoto.jpg" alt="">
+            </div>
         </div>
     </section>
 
-    <!-- Conteudo principal -  Página 3 -->
-     <section id="cardapio" class="content" >
-        <img src="cardapio.png" alt="">
-     </section>
+    <section class="cardapio" id="cardapio">
+        <h1>Cardapio</h1>
+        <div class="itens-cardapio">
+            <div class="Segunda">
+                <img src="./arrozfeijaoecarne1-removebg-preview.png" alt="">
+                <div class="info">
+                    <h3>Segunda</h3>
+                    <h4>Arroz, feijão, carne</h4>
+                    <h4>Macarrão</h4>
+                    <h4>Arroz doce</h4>
+                    <h4>Farofa de ovo</h4>
+                    <h4>Sopa de legumes</h4>
+                    <button class="escolher">Escolha qual você preferir</button>
+                </div>
+            </div>
+            <div class="Terça">
+                <img src="./macarrao-removebg-preview.png" alt="">
+                <div class="info">
+                    <h3>Segunda</h3>
+                    <h4>Arroz, feijão, carne</h4>
+                    <h4>Macarrão</h4>
+                    <h4>Arroz doce</h4>
+                    <h4>Farofa de ovo</h4>
+                    <h4>Sopa de legumes</h4>
+                    <button class="escolher">Escolha qual você preferir</button>
+                </div>
+            </div>
+            <div class="Quarta">
+                <img src="./arrozdoce1-removebg-preview.png" alt="">
+                <div class="info">
+                    <h3>Segunda</h3>
+                    <h4>Arroz, feijão, carne</h4>
+                    <h4>Macarrão</h4>
+                    <h4>Arroz doce</h4>
+                    <h4>Farofa de ovo</h4>
+                    <h4>Sopa de legumes</h4>
+                    <button class="escolher">Escolha qual você preferir</button>
+                </div>
+            </div>
+            <div class="Quinta">
+                <img src="./farofadeovo1-removebg-preview.png" alt="">
+                <div class="info">
+                    <h3>Segunda</h3>
+                    <h4>Arroz, feijão, carne</h4>
+                    <h4>Macarrão</h4>
+                    <h4>Arroz doce</h4>
+                    <h4>Farofa de ovo</h4>
+                    <h4>Sopa de legumes</h4>
+                    <button class="escolher">Escolha qual você preferir</button>
+                </div>
+            </div>
+            <div class="Sexta">
+                <img src="./sopadelegumes-removebg-preview.png" alt="">
+                <div class="info">
+                    <h3>Segunda</h3>
+                    <h4>Arroz, feijão, carne</h4>
+                    <h4>Macarrão</h4>
+                    <h4>Arroz doce</h4>
+                    <h4>Farofa de ovo</h4>
+                    <h4>Sopa de legumes</h4>
+                    <button class="escolher">Escolha qual você preferir</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-     <!--Conteudo principal - Página 4 -->
-     <section id="sugestoes" class="content" >
+    <section class="sugestoes" id="sugestoes">
         <div class="text-content">
         <h1>Deixe aqui as suas sujestões</h1>
-        <p>Aqui você podera deixar sujestoes de lanches que você gostaria que tivesse na escola</p>
-
+        <h2>Aqui você podera deixar sujestoes de lanches que você gostaria que tivesse na escola</h2>
+        <div class="message">
         <form action="messageForm">
-        <textarea name="sujestao" id="messageInput" placeholder="Sugestão:"></textarea>
+        <textarea name="sujestao" id="messageInput" placeholder="Digite aqui a sua sugestao:"></textarea>
         <button type="button" id="sendButton1">ENVIAR</button>
         </form>
-        
+        </div>
         <div id="messageBoard1"></div>
 
         <div class="text-content">
@@ -89,48 +138,23 @@
         </div>
      </section>
 
-     <!--Conteudo principal - pagina 5 -->
-     <section id="contato" class="content">
-        <div class="text-content">
-            <h1>ENTRE EM CONTATO</h1>
-            <p>Quer fazer um comentário, crítica ou sujestão?</p>
+    <section class="contatos" id="contatos">
+        <h3>Contatos</h3>
+        <div class="contatos-secao">
+            <div>
+                <i class="bi bi-instagram"></i>
+                <span>@gustavo.z7x</span>
+            </div>
+            <div>
+                <i class="bi bi-whatsapp"></i>
+                <span>(42)988781981</span>
+            </div>
         </div>
-        <form id="messageForm"></form>
-        <textarea class="messageInput" placeholder="PARA:" required></textarea>
-        <textarea class="messageInput" placeholder="NOME:" required></textarea>
-        <textarea class="messageInput" placeholder="E-MAIL:" required></textarea>
-        <textarea class="messageInput" placeholder="TELEFONE:" required></textarea>
-        <textarea class="messageInput" placeholder="MENSAGEM:" required></textarea>
-        <button type="button" id="sendButton">ENVIAR</button>
-        </form>
-        
-        <div id="messageBoard"></div>
+    </section>
 
-        <script>
-            const sendButton = document.getElementById('sendButton');
-            const textareas = document.querySelectorAll('.messageInput');
-            const messageBoard = document.getElementById('messageBoard');
-            
-            sendButton.addEventListener('click', function() {
-                messageBoard.innerHTML = '';
-            
-                textareas.forEach((textarea, index) => {
-                    const message = textarea.value;
-            
-                    if (message.trim() !== '') {
-                        const newMessage = document.createElement('p');
-                        newMessage.textContent = `Mensagem ${index + 1}: ${message}`;
-                        messageBoard.appendChild(newMessage);
-            
-                        textarea.value = '';
-                    } else {
-                        alert(`Por favor, preencha a textarea ${index + 1}.`);
-                    }
-                });
-            });
-            </script>
+<footer>
+    <h4>Desenvolvido por -> Gustavo B.</h4>
+</footer>
 
-     </section>
-    <script src="main.js"></script>
 </body>
 </html>
