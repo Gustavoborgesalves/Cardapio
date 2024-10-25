@@ -28,11 +28,12 @@ html {
 }
 
 .logo {
-    width: 70px;
+    width: 50px;
     height: auto;
     cursor: pointer;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .logo h1 {
@@ -241,7 +242,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./merenda2.jpg);
+    background-image: linear-gradient(rgba(29, 29, 29, 0.7), rgba(29, 29, 29, 0.7)), url(./merenda2.jpg);
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -267,7 +268,7 @@ html {
     font-size: 1.8rem;
     width: 600px;
     height: 100px;
-    color: #670000;
+    color: #00bfff;
 }
 
 .text-content .message {
